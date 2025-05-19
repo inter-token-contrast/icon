@@ -57,7 +57,7 @@
               Visuomotor Policy Learning</h1>
             <div class="is-size-5 publication-authors">
               <!-- Paper authors -->
-              <span class="author-block">
+              <!-- <span class="author-block">
                 <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Junlin Wang</a><sup>1</sup>,</span>
                 <span class="author-block">
                   <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>1</sup>,</span>
@@ -65,19 +65,22 @@
                     <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Thrid Author</a><sup>1</sup>,</span>
                   <span class="author-block">
                     <a href="FOURTH AUTHOR PERSONAL LINK" target="_blank">Fourth Author</a><sup>*</sup>
-                  </span>
+                  </span> -->
+                  <span class="author-block">
+                   Anonymous Author(s)</span>
                   </div>
 
                   <div class="is-size-5 publication-authors">
-                    <span class="author-block">Southern University of Science and Technology<br>Conferance name and year</span>
-                    <span class="eql-cntrb"><small><br><sup>*</sup>XXXXX</small></span>
+                    <!-- <span class="author-block">Southern University of Science and Technology<br>Conferance name and year</span> -->
+                    <span class="author-block">Affiliation<br>NeurIPS 2025</span>
+                    <!-- <span class="eql-cntrb"><small><br><sup>*</sup>XXXXX</small></span>
 
-                    <span class="eql-cntrb"><small><br><sup>*</sup>XXXXX</small></span>
+                    <span class="eql-cntrb"><small><br><sup>*</sup>XXXXX</small></span> -->
                   </div>
 
                   <div class="column has-text-centered">
                     <div class="publication-links">
-                         <!-- Arxiv PDF link -->
+                    
                       <span class="link-block">
                         <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
                         class="external-link button is-normal is-rounded is-dark">
@@ -88,36 +91,33 @@
                       </a>
                     </span>
 
-                    <!-- Supplementary PDF link -->
                     <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                      <a href="https://drive.google.com/drive/folders/1VkpOHRuycPqTrQSOI_Iyo_Nbgz7FizU5?usp=drive_link" target="_blank"
                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
                         <i class="fas fa-file-pdf"></i>
                       </span>
-                      <span>Supplementary</span>
+                      <span>Dataset</span>
                     </a>
                   </span>
 
-                  <!-- Github link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    <a href="https://anonymous.4open.science/r/icon-C20F/" target="_blank"
                     class="external-link button is-normal is-rounded is-dark">
                     <span class="icon">
                       <i class="fab fa-github"></i>
                     </span>
                     <span>Code</span>
                   </a>
-                </span>
+                </span> 
 
-                <!-- ArXiv abstract Link -->
-                <span class="link-block">
+                <!-- <span class="link-block">
                   <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
                   class="external-link button is-normal is-rounded is-dark">
                   <span class="icon">
                     <i class="ai ai-arxiv"></i>
                   </span>
-                  <span>arXiv</span>
+                  <span>arXiv</span> -->
                 </a>
               </span>
             </div>
@@ -133,9 +133,9 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="static/images/overview.svg" alt="overview" width="80%" id="teaser-image" style="display: block; margin-left: auto; margin-right: auto;">
+      <img src="static/images/overview.svg" alt="overview" width="90%" id="teaser-image" style="display: block; margin-left: auto; margin-right: auto;">
       <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
+        <!-- Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus.  -->
       </h2>
     </div>
   </div>
@@ -150,7 +150,18 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
+            Learning effective visual representations for robotic manipulation remains a fundamental hallenge due to the complex body dynamics involved in action execution.
+In this paper, we study how visual representations that carry body-relevant cues
+can enable efficient policy learning for downstream robotic manipulation tasks.
+We present Inter-token Contrast (ICon), a contrastive learning method applied to
+the token-level representations of Vision Transformers (ViTs). ICon enforces a
+separation in the feature space between agent-specific and environment-specific
+tokens, resulting in agent-centric visual representations that embed body-specific
+inductive biases. This framework can be seamlessly integrated into end-to-end
+policy learning by incorporating the contrastive loss as an auxiliary objective. Our
+experiments show that ICon not only improves policy performance across various
+manipulation tasks but also facilitates policy transfer across different robots. The
+project website: https://inter-token-contrast.github.io/icon/
           </p>
         </div>
       </div>
@@ -219,7 +230,7 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3 has-text-centered">RLBench Experiments</h2>
+      <h2 class="title is-3 has-text-centered">Experimental Results (Franka)</h2>
       <div class="columns is-multiline is-centered">
         <!-- 第一个GIF -->
         <div class="column is-3">
@@ -261,9 +272,14 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title is-3 has-text-centered">RLBench Experiments</h2>
+      <!-- <h2 class="title is-3 has-text-centered">RLBench Experiments</h2> -->
       <div class="columns is-multiline is-centered">
-        <!-- 第一个GIF -->
+        <div class="column is-3">
+          <div class="image-container">
+            <img src="static/videos/close_microwave.gif" alt="Lift Cube" width="100%">
+            <p class="has-text-centered mt-2">Close Drawer</p>
+          </div>
+        </div>
         <div class="column is-3">
           <div class="image-container">
             <img src="static/videos/lift_cube.gif" alt="Lift Cube" width="100%">
@@ -294,27 +310,65 @@
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container">
-      <h2 class="title">Poster</h2>
+      <h2 class="title is-3 has-text-centered">Cross-Robot Transfer</h2>
+      <div class="columns is-multiline is-centered">
+      
+        <div class="column is-3">
+          <div class="image-container">
+            <img src="static/videos/lift_cube_iiwa.gif" alt="Lift Cube" width="100%">
+            <p class="has-text-centered mt-2">Lift (IIWA)</p>
+          </div>
+        </div>
+        
+        <div class="column is-3">
+          <div class="image-container">
+            <img src="static/videos/stack_cube_iiwa.gif" alt="Open Door" width="100%">
+            <p class="has-text-centered mt-2">Stack (IIWA)</p>
+          </div>
+        </div>
 
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
+        <div class="column is-3">
+          <div class="image-container">
+            <img src="static/videos/lift_cube_kinova.gif" alt="Open Door" width="100%">
+            <p class="has-text-centered mt-2">Lift (Kinova)</p>
+          </div>
+        </div>
+
+        <div class="column is-3">
+          <div class="image-container">
+            <img src="static/videos/stack_cube_kinova.gif" alt="Open Door" width="100%">
+            <p class="has-text-centered mt-2">Stack (Kinova)</p>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="hero is-normal">
+  <div class="hero-body">
+    <div class="container">
+      <h2 class="title">Paper</h2>
+
+      <iframe  src="static/pdfs/neurips_2025.pdf" width="100%" height="550">
           </iframe>
         
       </div>
     </div>
   </section>
-<!--End paper poster -->
 
 
 <!--BibTex citation -->
-  <section class="section" id="BibTeX">
+  <!-- <section class="section" id="BibTeX">
     <div class="container is-max-desktop content">
       <h2 class="title">BibTeX</h2>
       <pre><code>BibTex Code Here</code></pre>
     </div>
-</section>
+</section> -->
 <!--End BibTex citation -->
 
-
+<!-- 
   <footer class="footer">
   <div class="container">
     <div class="columns is-centered">
@@ -331,7 +385,7 @@
       </div>
     </div>
   </div>
-</footer>
+</footer> -->
 
 <!-- Statcounter tracking code -->
   
